@@ -1,0 +1,14 @@
+.row {
+  max-width: $grid-width;
+  // gap: $gutter-horizontal;
+  margin: 0px auto;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  justify-content: space-between;
+  align-items: center;
+}
+[class^="col-"] {
+  align-self: start;
+}
