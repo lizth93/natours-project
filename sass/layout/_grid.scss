@@ -4,11 +4,21 @@
   margin: 0px auto;
   display: grid;
 
-  grid-template-columns: 1fr 1fr;
-
   justify-content: space-between;
   align-items: center;
+  align-items: start;
+
+  &.col-1-of-2 {
+    grid-template-columns: 1fr 1fr;
+    column-gap: $gutter-horizontal;
+  }
+
+  &.col-1-of-4 {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: $gutter-horizontal;
+  }
 }
+
 [class^="col-"] {
-  align-self: start;
+  align-items: start;
 }
