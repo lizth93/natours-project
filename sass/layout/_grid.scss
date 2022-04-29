@@ -8,6 +8,10 @@
   align-items: center;
   align-items: start;
 
+  &:not(:last-child) {
+    margin-bottom: 9.6rem;
+  }
+
   &.col-1-of-2 {
     grid-template-columns: 1fr 1fr;
     column-gap: $gutter-horizontal;
