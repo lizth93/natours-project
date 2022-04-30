@@ -4,7 +4,7 @@
   position: relative;
   &__photo {
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
-    border-radius: 2px;
+    border-radius: $border-radius;
     width: 55%;
     position: absolute;
     z-index: 1;
