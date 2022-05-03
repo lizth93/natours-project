@@ -29,3 +29,10 @@
 [class^="col-"] {
   align-items: start;
 }
+
+.col-1-of-2-popup {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: $gutter-horizontal;
+  align-items: center;
+}
