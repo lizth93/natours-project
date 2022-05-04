@@ -22,6 +22,11 @@
     list-style: none;
     display: flex;
     gap: 1.5rem;
+
+    @include respond(1100) {
+      gap: 1rem;
+      white-space: nowrap;
+    }
   }
 
   &__link {

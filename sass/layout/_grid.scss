@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   align-items: start;
+  justify-content: center;
 
   &:not(:last-child) {
     margin-bottom: 9.6rem;
@@ -14,15 +15,38 @@
   &.col-1-of-2 {
     grid-template-columns: 1fr 1fr;
     column-gap: $gutter-horizontal;
+
+    @include respond(1100) {
+      margin: 0 3rem 0 3rem;
+      column-gap: 5rem;
+    }
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &.col-1-of-3 {
     grid-template-columns: repeat(3, 1fr);
     column-gap: $gutter-horizontal;
+
+    @include respond(tab-port) {
+      margin: auto;
+      column-gap: $gutter-horizontal-query;
+      grid-template-columns: 1fr;
+      row-gap: 4rem;
+    }
   }
   &.col-1-of-4 {
     grid-template-columns: repeat(4, 1fr);
     column-gap: $gutter-horizontal;
+
+    @include respond(tab-port) {
+      margin: 0 3rem 0rem 3rem;
+      column-gap: $gutter-horizontal-query;
+      row-gap: 4rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
 

@@ -2,6 +2,10 @@
   background-color: $color-grey-light-1;
   padding: 25rem 0;
   margin-top: -20vh;
+
+  @include respond(1100) {
+    margin: -20vh 3rem 0 3rem;
+  }
 }
 
 .section-features {
@@ -52,8 +56,19 @@
   background-size: cover;
   border-radius: $border-radius;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-  height: 50rem;
+  height: auto;
   width: 114rem;
+
+  @include respond(1100) {
+    height: auto;
+    width: 95rem;
+    justify-content: center;
+  }
+  @include respond(755) {
+    height: auto;
+    width: 80rem;
+    justify-content: center;
+  }
 
   &__form {
     width: 50%;

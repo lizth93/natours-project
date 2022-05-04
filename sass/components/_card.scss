@@ -4,6 +4,10 @@
   position: relative;
   height: $height-card;
 
+  @include respond(tab-port) {
+    max-width: 50rem;
+  }
+
   &__side {
     height: $height-card;
     transition: all 0.8s ease;
