@@ -12,17 +12,28 @@
     margin-bottom: 9.6rem;
   }
 
+  @include respond(phone) {
+    &:not(:last-child) {
+      margin-bottom: 6.6rem;
+    }
+  }
+
   &.col-1-of-2 {
     grid-template-columns: 1fr 1fr;
     column-gap: $gutter-horizontal;
 
     @include respond(1100) {
-      margin: 0 3rem 0 3rem;
+      margin: 0 6rem 0 6rem;
       column-gap: 5rem;
     }
 
     @include respond(tab-port) {
       grid-template-columns: 1fr;
+      row-gap: 6rem;
+    }
+
+    @include respond(phone) {
+      row-gap: 3rem;
     }
   }
 
@@ -31,8 +42,8 @@
     column-gap: $gutter-horizontal;
 
     @include respond(tab-port) {
-      margin: auto;
-      column-gap: $gutter-horizontal-query;
+      // margin: 0 auto;
+      max-width: 50rem;
       grid-template-columns: 1fr;
       row-gap: 4rem;
     }
@@ -46,6 +57,13 @@
       column-gap: $gutter-horizontal-query;
       row-gap: 4rem;
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(phone) {
+      margin: 0 3rem 0rem 3rem;
+
+      row-gap: 4rem;
+      grid-template-columns: 1fr;
     }
   }
 }

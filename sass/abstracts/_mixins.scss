@@ -8,9 +8,30 @@
 /**/
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == 323 {
+    @media (max-width: 20.18em) {
+      //323px (size/16)
+      @content;
+    }
+  }
+
+  @if $breakpoint == 415 {
+    @media (max-width: 25.9em) {
+      //415px (size/16)
+      @content;
+    }
+  }
+
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {
       //600px (size/16)
+      @content;
+    }
+  }
+
+  @if $breakpoint == 755 {
+    @media (max-width: 47.18em) {
+      //755px
       @content;
     }
   }
@@ -25,13 +46,6 @@
   @if $breakpoint == 1100 {
     @media (max-width: 68.75em) {
       //1100px
-      @content;
-    }
-  }
-
-  @if $breakpoint == 755 {
-    @media (max-width: 47.18em) {
-      //1200px
       @content;
     }
   }

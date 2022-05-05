@@ -4,9 +4,17 @@
   font-size: $font-size-text-small;
   color: $color-grey-light-1;
 
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
+
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 4rem;
+    }
   }
   &__logo {
     width: 15rem;
@@ -17,6 +25,17 @@
     padding-top: 2rem;
     display: inline-block;
     width: 71%;
+
+    @include respond(tab-port) {
+      text-align: center;
+      justify-self: center;
+
+      padding-bottom: 2rem;
+    }
+
+    @include respond(phone) {
+      width: 85%;
+    }
   }
   &__list {
     list-style: none;
@@ -26,6 +45,20 @@
     @include respond(1100) {
       gap: 1rem;
       white-space: nowrap;
+    }
+
+    @include respond(tab-port) {
+      gap: 5rem;
+      justify-content: center;
+    }
+
+    @include respond(phone) {
+      gap: 1.5rem;
+    }
+
+    @include respond(323) {
+      gap: 1rem;
+      font-size: 1.2rem;
     }
   }
 
@@ -50,7 +83,19 @@
   &__copyright {
     border-top: 1px solid $color-grey-dark;
     padding-top: 2rem;
+
     width: 71%;
     float: right;
+
+    @include respond(tab-port) {
+      float: none;
+      text-align: center;
+      width: 71%;
+      margin: 0 auto;
+    }
+
+    @include respond(phone) {
+      width: 85%;
+    }
   }
 }
