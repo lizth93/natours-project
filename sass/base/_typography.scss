@@ -26,6 +26,11 @@ body {
       letter-spacing: 1rem;
       font-size: 5rem;
     }
+
+    @include respond(323) {
+      letter-spacing: 1rem;
+      font-size: 3rem;
+    }
   }
   &--sub {
     display: block;
@@ -63,6 +68,9 @@ body {
     font-size: 2.5rem;
     padding: 0 3rem;
     text-align: center;
+  }
+  @include respond(323) {
+    padding: 0;
   }
 
   &:hover {

@@ -10,6 +10,10 @@
   @include respond(415) {
     padding: 20rem 0rem;
   }
+
+  @include respond(323) {
+    padding: 15rem 0rem;
+  }
 }
 
 .section-features {

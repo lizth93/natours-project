@@ -202,6 +202,10 @@
       transform: translate(0);
       width: 100%;
       padding: 7rem 4rem 4rem 4rem;
+
+      @include respond(323) {
+        padding: 5rem 2rem 2rem 2rem;
+      }
     }
     &__price-box {
       margin-bottom: 3rem;

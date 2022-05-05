@@ -35,6 +35,10 @@
     @include respond(phone) {
       row-gap: 3rem;
     }
+
+    @include respond(323) {
+      margin: 0 3rem 0 3rem;
+    }
   }
 
   &.col-1-of-3 {

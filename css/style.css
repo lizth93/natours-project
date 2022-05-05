@@ -88,6 +88,10 @@ body {
       .heading-primary--main {
         letter-spacing: 1rem;
         font-size: 5rem; } }
+    @media (max-width: 20.18em) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-size: 3rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -116,6 +120,9 @@ body {
       font-size: 2.5rem;
       padding: 0 3rem;
       text-align: center; } }
+  @media (max-width: 20.18em) {
+    .heading-secondary {
+      padding: 0; } }
   .heading-secondary:hover {
     transform: skewX(-20deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -168,6 +175,9 @@ body {
   font-size: 1.6rem;
   border: none;
   cursor: pointer; }
+  @media (max-width: 20.18em) {
+    .btn, .btn:link, .btn:visited {
+      padding: 1.5rem 3.5rem; } }
 
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -420,7 +430,11 @@ body {
         left: 0%;
         transform: translate(0);
         width: 100%;
-        padding: 7rem 4rem 4rem 4rem; }
+        padding: 7rem 4rem 4rem 4rem; } }
+    @media (max-width: 56.25em) and (max-width: 20.18em) {
+      .card__cta {
+        padding: 5rem 2rem 2rem 2rem; } }
+  @media (max-width: 56.25em) {
       .card__price-box {
         margin-bottom: 3rem; }
       .card__price-value {
@@ -501,6 +515,9 @@ body {
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
+  @media (max-width: 20.18em) {
+    .form__group:not(:last-child) {
+      margin-bottom: 1rem; } }
 
 .form__input {
   font-size: 1.5rem;
@@ -514,6 +531,9 @@ body {
   width: 90%;
   display: block;
   transition: all 0.3s; }
+  @media (max-width: 20.18em) {
+    .form__input {
+      width: 100%; } }
   .form__input::-webkit-input-placeholder {
     color: #999; }
   .form__input:focus {
@@ -668,6 +688,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media (max-width: 20.18em) {
+      .header__text-box {
+        top: 50%; } }
 
 .row {
   max-width: 114rem;
@@ -696,6 +719,9 @@ body {
     @media (max-width: 37.5em) {
       .row.col-1-of-2 {
         row-gap: 3rem; } }
+    @media (max-width: 20.18em) {
+      .row.col-1-of-2 {
+        margin: 0 3rem 0 3rem; } }
   .row.col-1-of-3 {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 6rem; }
@@ -940,6 +966,9 @@ body {
   @media (max-width: 25.9em) {
     .section-about {
       padding: 20rem 0rem; } }
+  @media (max-width: 20.18em) {
+    .section-about {
+      padding: 15rem 0rem; } }
 
 .section-features {
   padding: 20rem 0;

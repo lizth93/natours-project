@@ -12,6 +12,10 @@
     font-size: $default-font-size;
     border: none;
     cursor: pointer;
+
+    @include respond(323) {
+      padding: 1.5rem 3.5rem;
+    }
   }
 
   &:hover {
