@@ -81,4 +81,12 @@
   grid-template-columns: 1fr 2fr;
   column-gap: $gutter-horizontal;
   align-items: center;
+
+  @include respond(1500) {
+    column-gap: 3rem;
+  }
+
+  @include respond(1100) {
+    grid-template-columns: 1fr;
+  }
 }

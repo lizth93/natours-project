@@ -69,8 +69,13 @@ body {
     padding: 0 3rem;
     text-align: center;
   }
-  @include respond(323) {
+
+  @include respond(415) {
     padding: 0;
+  }
+
+  @include respond(323) {
+    font-size: 2rem;
   }
 
   &:hover {

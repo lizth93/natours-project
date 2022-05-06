@@ -15,6 +15,10 @@
   @include respond(tab-port) {
     margin-bottom: 3rem !important;
   }
+
+  @include respond(323) {
+    margin-bottom: 1.5rem !important;
+  }
 }
 
 .u-margin-top-big {

@@ -21,6 +21,11 @@ html {
     //900px
     font-size: 50%;
   }
+
+  @include respond(323) {
+    font-size: 48%;
+  }
+
   @include respond(big-desktop) {
     font-size: 75%;
   }
