@@ -27,6 +27,7 @@
 
   margin-top: -10rem;
   transform: skewY(-7deg);
+  background-size: cover;
 
   & > * {
     transform: skewY(7deg);
@@ -48,7 +49,9 @@
     padding: 10rem 3rem;
   }
 
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  @media (min-resolution: 192dpi) and (min-width: 37.5em),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    (min-width: 125em) {
     background-image: linear-gradient(
         to right,
         rgba($color-primary, 0.8),
@@ -158,7 +161,9 @@
     }
   }
 
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  @media (min-resolution: 192dpi) and (min-width: 37.5em),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    (min-width: 125em) {
     background-image: linear-gradient(
         105deg,
         rgba($color-white, 0.9) 0%,
