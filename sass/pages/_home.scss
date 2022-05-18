@@ -23,7 +23,7 @@
       rgba($color-primary, 0.8),
       rgba($color-primary-dark, 0.8)
     ),
-    url(../img/nat-4.jpg);
+    url(../img/nat-4-small.jpg);
 
   margin-top: -10rem;
   transform: skewY(-7deg);
@@ -46,6 +46,15 @@
 
   @include respond(323) {
     padding: 10rem 3rem;
+  }
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+        to right,
+        rgba($color-primary, 0.8),
+        rgba($color-primary-dark, 0.8)
+      ),
+      url(../img/nat-4.jpg);
   }
 }
 
@@ -92,7 +101,7 @@
       rgba($color-white, 0.9) 50%,
       transparent 50%
     ),
-    url(../img/nat-10.jpg);
+    url(../img/nat-10-small.jpg);
   background-size: cover;
   border-radius: $border-radius;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
@@ -147,5 +156,15 @@
     @include respond(phone) {
       width: auto;
     }
+  }
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 50%,
+        transparent 50%
+      ),
+      url(../img/nat-10.jpg);
   }
 }
