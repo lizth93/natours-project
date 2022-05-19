@@ -9,8 +9,12 @@ const allLinks = document.querySelectorAll("a:link");
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     const href = link.getAttribute("href");
+    console.log(href, "printing my href");
 
-    if (href !== "#popup") {
+    if (
+      href !== "#popup" &&
+      href !== "https://luzedith-curriculum.netlify.app//"
+    ) {
       e.preventDefault();
       navigationButton.checked = false;
 
